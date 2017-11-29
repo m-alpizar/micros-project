@@ -1,0 +1,4 @@
+﻿  ConsoleApplication6.cpp
+c:\users\johan\source\repos\consoleapplication6\consoleapplication6\consoleapplication6.cpp(99): warning C4244: '=': conversión de 'double' a 'int'; posible pérdida de datos
+c:\users\johan\source\repos\consoleapplication6\consoleapplication6\consoleapplication6.cpp(100): warning C4244: '=': conversión de 'double' a 'int'; posible pérdida de datos
+  ConsoleApplication6.vcxproj -> c:\users\johan\source\repos\ConsoleApplication6\x64\Debug\ConsoleApplication6.exe
