@@ -47,18 +47,15 @@ void loop() {
        // Reading angle of the servo2
       inData2 = Serial.readStringUntil('$');
       Input2 = inData2.toInt();
-      
-      myPID.Compute();  //action control X compute
-      myPID2.Compute(); //   action control  Y compute
-      myservo.write(Input);
-      myservo2.write(Input2);
- 
+      Input=map(Input,0,650,0,255);
+      Input2=map(Input2,0,650,0,255);
     
-  }else{
-    myservo.write(80);
-    myservo2.write(80);
   }
 
+  myPID.Compute();  //action control X compute
+  myPID2.Compute(); //   action control  Y compute
+  myservo.write(Input);
+  myservo2.write(Input2); 
   
 }
 
